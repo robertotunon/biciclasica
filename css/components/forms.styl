@@ -1,0 +1,48 @@
+/* ________ Forms ________ */
+input, textarea, select
+	-webkit-appearance none
+	-moz-appearance none
+	appearance none
+	width 100%
+	font-size .875rem
+	color negro
+	padding .25rem .5rem
+	background-color gris_minimo
+	border none
+	border-bottom 1px solid verde
+	border-radius 0
+	outline none
+	&:-webkit-autofill
+		background-color gris_minimo !important
+		-webkit-box-shadow 0 0 0px 1000px gris_minimo inset
+	&[type="radio"]
+	&[type="checkbox"]
+		-webkit-appearance none
+		-moz-appearance none
+		appearance none
+		background-color white
+		border 2px solid verde_claro
+	&[type="radio"]
+		position relative
+		width 1rem
+		height 1rem
+		border-radius 50%
+		&:checked
+			border-color verde
+			&:after
+				content ''
+				position absolute
+				top 0
+				bottom 0
+				left 0
+				right 0
+				width 100%
+				height 100%
+				background-color verde
+				border 2px solid white
+				border-radius 50%
+	&[type="checkbox"]
+		&:checked
+			background url(../svg/icon_check.svg) no-repeat center
+			background-size 80%
+			border-color verde

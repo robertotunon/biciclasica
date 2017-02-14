@@ -1,0 +1,21 @@
+/* ________ Breadcrumb  ________ */
+.breadcrumb
+	width 100%
+	font-style italic
+	font-size .8125rem
+	color gris_masclaro
+	margin 0 auto 1rem
+	@media (max-width: 480px)
+		display none
+	.link
+		font-family primary_font
+		text-decoration underline
+		color gris_bajao
+		&:after
+			content ' /'
+			margin 0 .15rem
+			text-decoration none
+			display inline-block
+	.current
+		font-weight 400
+		letter-spacing -.025rem

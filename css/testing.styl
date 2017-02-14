@@ -1,0 +1,480 @@
+@import 'nib'
+
+vendor-prefixes = o ms moz webkit official
+
+/*_______ FONTS _________*/
+
+@font-face {
+    font-family: 'roboto_local';
+    src: url('../fonts/Roboto-Thin-webfont.eot');
+    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_local';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_local';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*_______ Colores _______*/
+verde         		= #77ae9a
+verde_claro 		= #92beae
+verde_masclaro  	= #bbd6cc
+verde_bajao 		= #d6e7e1
+verde_muybajao 		= #e4efeb
+
+rojo         		= #f26649
+rojo_claro 			= #f5856d
+rojo_masclaro  		= #f8b2a4
+rojo_bajao 			= #d6e7e1
+rojo_muybajao 		= #fbd1c8
+
+amarillo         	= #ece2a9
+amarillo_claro 		= #f0e8ba
+amarillo_masclaro  	= #f5f0d4
+amarillo_bajao 		= #f9f6e5
+amarillo_muybajao 	= #fbf9ee
+
+marron         		= #4b3905
+marron_claro 		= #6f6137
+marron_masclaro  	= #a59c82
+marron_bajao 		= #c9c3b4
+marron_muybajao 	= #dbd7cd
+
+negro           	= #232323
+gris            	= #3e3e3e
+gris_claro      	= #5d5d5d
+gris_masclaro   	= #b8b8b8
+gris_bajao      	= #959595
+gris_muybajao   	= #cacaca
+gris_minimo     	= #f0f0f0
+
+
+
+hr
+	margin 4rem 0 0
+
+/*_______ General _______*/
+html
+  margin 0
+body
+  font-family 'Roboto', sans-serif
+  font-weight 300
+  font-size 16px
+  color gris
+  margin 0
+  padding 0
+  box-sizing border-box
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+  // text-shadow 1px 1px 1px rgba(0,0,0,0.004)
+
+
+/*_______ General Tags _______*/
+h1
+  font-weight 600
+  font-size 2.5rem
+  margin 0 0 .5rem
+
+h2
+  font-weight 400
+  font-size 2.25rem
+  margin 0 0 .5rem
+
+h3
+  font-weight 400
+  font-size 1.75rem
+  line-height 1.15em
+  margin 0 0 .5rem
+
+h4
+  font-weight 400
+  font-size 1.5rem
+  margin 0 0 .5rem
+  
+h5
+  font-weight 400
+  font-size 1.25rem
+  margin 0 0 .5rem
+
+h6
+  font-weight 400
+  font-size 1.15rem
+  margin 0 0 .5rem
+
+a
+  text-decoration none
+  color gris
+  &:hover
+    color gris_masclaro
+
+p
+  font-weight 400
+  font-size 1rem
+  line-height 1.25em
+  margin 0 0 1rem
+  strong
+    font-weight 600
+  a
+    text-decoration underline
+  
+ul
+  list-style none
+  margin 0
+  padding 0
+  li
+    margin 0
+    padding 0
+
+figure
+  margin 0
+  overflow hidden
+  img
+    width 100%
+    height auto
+    display block
+
+img
+  max-width 100%
+  height auto
+
+blockquote
+  border-left 2px solid
+  padding 0 0 0 1rem
+  margin 0 0 2rem
+  font-size 1rem
+  line-height 1.5rem
+  font-style italic
+
+*
+  &::selection
+    background-color light
+*
+  &::-moz-selection
+    background-color light
+
+/*_______ Forms _______*/
+input, textarea, select
+  width 100%
+  font-size 1em
+  color negro
+  margin .5em 0 .2em 0
+  padding .4em
+  box-sizing border-box
+  background-color white
+  border 1px solid #E0E3E3
+  border-radius 0
+  outline none
+input[type="submit"]
+  width inherit
+  color white
+  background secondary
+  padding .5em 1em
+  float right
+  &:hover
+    background gris
+
+
+/* ______________________________  LAYOUT  ______________________________ */
+
+/*_______ flex _______*/
+.flex
+  -ms-box-orient: horizontal;
+  display -webkit-box     /* OLD - iOS 6-, Safari 3.1-6 */
+  display -moz-box        /* OLD - Firefox 19- (buggy but mostly works) */
+  display -ms-flexbox     /* TWEENER - IE 10 */
+  display -webkit-flex    /* NEW - Chrome */
+  display -moz-flex
+  display flex             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  -webkit-flex-flow row wrap
+  -moz-flex-flow row wrap
+  -ms-flex-flow row wrap
+  flex-flow row wrap
+  
+  -webkit-justify-content space-between
+  -moz-justify-content space-between
+  -ms-justify-content space-between
+  justify-content space-between
+  
+  -webkit-align-items flex-start
+  -moz-align-items flex-start
+  -ms-align-items flex-start
+  align-items flex-start
+  .item
+    -webkit-flex-grow 0
+    -webkit-flex-shrink 1
+    
+    -moz-flex-grow 0
+    -moz-flex-shrink 1
+    
+    -ms-flex-grow 0
+    -ms-flex-shrink 1
+    
+    flex-grow 0
+    flex-shrink 1
+
+
+.content
+	max-width 960px
+	margin 0 auto 2rem
+	padding 0 1rem
+	@media (max-width: 768px)
+    	padding 0 2rem
+
+.inner
+	max-width 960px
+	margin 0 auto
+	@media (max-width: 768px)
+    	padding 0 2rem
+	
+/* header */
+.site_header
+	position relative
+	max-width 960px
+	margin .5rem auto 1rem
+	border-bottom 1px solid gris_muybajao
+	box-sizing border-box
+	@media (max-width: 768px)
+    	margin .5rem 2rem 1rem
+    @media (max-width: 480px)
+    	border none
+    &.header_02
+    	font-family 'roboto_local', sans-serif
+
+.status_bar
+	font-size .75rem
+	line-height 1em
+	color gris_claro
+	padding 0 0 .25rem
+	border-bottom 1px solid gris_minimo
+	justify-content flex-start
+	align-items center
+	@media (max-width: 480px)
+		justify-content flex-end
+	nav
+		flex-grow 0
+		flex-shrink 0
+		li
+			display inline-block
+			line-height 1em
+	.lang_nav
+		margin 0 .75rem 0 0
+		@media (max-width: 480px)
+			display none
+		.lang_menu
+			flex-basis 25%
+			li
+				&:after
+					content '/'
+					color gris_masclaro
+					margin 0 0 0 .25rem
+				&:last-of-type
+					&:after
+						content ''
+				a
+					color gris_claro
+					&.active
+						color gris_masclaro
+	.status_message
+		flex-grow 1
+		flex-shrink 1
+		@media (max-width: 480px)
+			display none
+	.secondary_nav
+		align-self flex-end
+		.secondary_menu
+			li
+				margin 0 0 0 .35rem
+				@media (max-width: 480px)
+					margin 0 0 0 .5rem
+				a
+					color gris_claro
+					@media (max-width: 480px)
+						display block
+				&:after
+					content '|'
+					color gris_bajao
+					margin 0 0 0 .35rem
+					@media (max-width: 480px)
+						content initial
+				&:last-of-type
+					&:after
+						content ''
+						margin 0
+			.phone
+				a
+					@media (max-width: 480px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+						background url(../img/icon_phone.svg) no-repeat center
+						background-size contain
+			.login
+				a
+					@media (max-width: 480px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+						background url(../img/icon_user.svg) no-repeat center
+						background-size contain
+			.cart
+				a
+					@media (max-width: 480px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+						background url(../img/icon_cart.svg) no-repeat center
+						background-size contain
+					&:after
+						content ''
+						width .875rem
+						height .75rem
+						display inline-block
+						vertical-align bottom
+						line-height 1em
+						margin 0 0 0 .15rem
+						background url(../img/icon_cart.svg) no-repeat center
+						background-size contain
+
+.site_title
+	width 15rem
+	height 3rem
+	margin 1.5rem auto 2rem
+	text-align center
+	text-indent -9999px
+	background url(../img/logo_biciclasica.jpg) no-repeat center
+	background-size contain
+	position relative
+	@media (max-width: 480px)
+		margin 1.5rem auto 2rem
+	&:before
+		content ''
+		display block
+		width 1.125rem
+		height 1.125rem
+		position absolute
+		top -2.05rem
+		left 48%
+		right 48%
+		margin 0 auto
+		background url(../img/icon_star.svg) no-repeat center
+		background-size contain
+	.name
+		font-weight normal
+		font-size 1.85rem
+		line-height 1em
+		margin 0
+	.tagline
+		font-weight normal
+		font-size 1.05rem
+		line-height 1em
+		margin 0
+
+.header_02
+	.site_title
+		width 16.25rem
+		height 3rem
+		background url(../img/logo_biciclasica_02.jpg) no-repeat center
+
+.main_nav
+    padding 0 0 .25rem 0
+    transition .35s all ease-out
+    @media (max-width: 480px)
+    	height 0
+    	overflow hidden
+	.main_menu
+		position relative
+		text-align center
+		li
+			margin 0 .5rem
+			display inline-block
+			vertical-align middle
+			@media (max-width: 480px)
+				display block
+				margin .5rem
+			a
+				font-weight 400
+				font-size .85rem
+				line-height 1em
+				text-transform uppercase
+				@media (max-width: 480px)
+					display block
+					padding .5rem
+			&.search
+				position absolute
+				top 0
+				right 0
+				margin 0
+				@media (max-width: 480px)
+					position initial
+					margin .5rem 0
+					display none
+				input
+					height 1rem
+					font-size .85rem
+					margin 0 0 .25rem
+					padding 0
+					border none
+					background url(../img/icon_lupa.svg) no-repeat center right
+					background-size contain
+.hide_search
+	font-size 1rem
+	margin 0 0 2rem
+	padding .5rem
+	background url(../img/icon_lupa.svg) no-repeat center right
+	background-size 7%
+	display none
+	@media (max-width: 480px)
+		display block
+		
+
+/*_______ Menú respondón _______*/
+.open_menu
+  width 1.5rem
+  height 1.5rem
+  position absolute
+  top 0
+  left 0
+  cursor pointer
+  outline 0
+  text-indent -9999px
+  background url(../img/icon_menu.svg) no-repeat center
+  display none
+  @media (max-width: 480px)
+    display block
+
+#menutoggle
+  display none
+  &:checked + nav
+    height 18rem
+
+
+
+.main_search
+	width 280px
+	height 30px
+	border 1px solid #3e3e3e
+

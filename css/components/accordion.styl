@@ -1,0 +1,43 @@
+/* _____________ Accordion item ______________ */
+.acordeon
+	position relative
+	margin-bottom 0
+	&.inner
+		padding 2rem 1rem
+	@media (max-width: 480px)
+		.section_header
+			margin-bottom 0
+			.section_title
+				margin-bottom 0
+	.acordeon_button
+		display none
+		position absolute
+		top 0
+		right 0
+		width 25%
+		height 6rem
+		line-height 2em
+		text-indent -9999px
+		overflow hidden
+		background url(../svg/arrow_down.svg) no-repeat center
+		background-size 1rem
+		transition all .25s ease-in-out
+		@media (max-width: 480px)
+			display inherit
+	.toggle_acordeon
+		display none
+		&:checked ~ .acordeon_content
+			height 100%
+			margin 2rem auto 0
+			opacity 1
+			transition all .25s ease-out
+		&:checked ~ .acordeon_button
+			transform rotate(180deg)
+	.acordeon_content
+		flex 1 1 100%
+		@media (max-width: 480px)
+			height 0
+			overflow hidden
+			opacity 0
+			transition all .25s ease-out
+			transform-origin center top

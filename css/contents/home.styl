@@ -1,0 +1,39 @@
+/* ________ Home _______ */
+.home_slider
+	max-width 960px
+	height 20rem
+	background verde_bajao
+	@media (max-width: 480px)
+		display none
+
+.home
+	.section_header
+		margin-bottom 1rem
+		.section_title
+			font-family primary_font
+			font-style normal
+			font-size .875rem
+			text-transform uppercase
+			text-align center
+			color gris
+			margin 0 0 1rem
+			position relative
+			&:before
+			&:after
+				content ''
+				display block
+				width 42%
+				z-index -1
+				border-top 1px solid gris_bajao
+				position absolute
+				bottom 50%
+				@media (max-width: 768px)
+					width 40%
+				@media (max-width: 480px)
+					width 30%
+				@media (max-width: 340px)
+					width 25%
+			&:before
+				left 0
+			&:after
+				right 0

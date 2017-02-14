@@ -1,0 +1,117 @@
+.main_nav
+	padding 0 0 .25rem 0
+	transition .35s all ease-out
+	@media (max-width: 768px)
+		height 0
+		padding 0
+		overflow hidden
+	.main_menu
+		position relative
+		text-align center
+		li
+			margin 0 .75rem
+			display inline-block
+			vertical-align middle
+			@media (max-width: 768px)
+				display block
+				margin 0 0 .5rem
+			a
+				font-family primary_font
+				font-weight 400
+				font-size .85rem
+				line-height 1em
+				text-transform uppercase
+				@media (max-width: 768px)
+					display block
+					padding .5rem
+			&.search
+				max-width 10rem
+				position absolute
+				top .15rem
+				right 0
+				margin 0
+				@media (max-width: 768px)
+					position initial
+					margin .5rem 0
+					display none
+
+.search_form
+	position relative
+	.input_search
+		height 1rem
+		font-size .85rem
+		margin 0 0 .25rem
+		padding 0
+		background-color white
+		border none
+	.btn_search
+		position absolute
+		display block
+		top .25rem
+		right 0
+		width 1rem
+		height 1rem
+		margin 0
+		padding 0
+		box-sizing border-box
+		border none
+		text-indent -9999px
+		background url(../svg/icon_lupa.svg) no-repeat center
+		background-size contain
+		border none
+		cursor pointer
+		transition all .25s ease-out
+		&:hover
+			opacity .7
+			background initial
+	&.hide
+		display none
+		@media (max-width: 768px)
+			display block
+		.input_search
+			height 2rem
+			font-size 1rem
+			margin 0
+			padding 1.25rem .5rem
+			border 1px solid gris_muybajao
+			&::-webkit-input-placeholder
+				font-size .875rem
+				color gris_muybajao
+			&:-moz-placeholder /* Firefox 18- */
+				font-size .875rem
+				color gris_muybajao
+			&::-moz-placeholder  /* Firefox 19+ */
+				font-size .875rem
+				color gris_muybajao
+			&:-ms-input-placeholder 
+				font-size .875rem		
+				color gris_muybajao
+			&::-webkit-search-cancel-button
+				margin-right 2.5rem
+		.btn_search
+			top .45rem
+			right .75rem
+			width 1.75rem
+			height 1.75rem
+
+
+/*_______ Menú respondón _______*/
+.open_menu
+	width 2rem
+	height 1.5rem
+	position absolute
+	top 0
+	left 0
+	cursor pointer
+	outline 0
+	text-indent -9999px
+	background url(../svg/icon_menu.svg) no-repeat center
+	background-size contain
+	display none
+	@media (max-width: 768px)
+		display block
+
+#menutoggle
+	display none
+	&:checked + nav
+		height 15rem

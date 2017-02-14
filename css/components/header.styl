@@ -1,0 +1,174 @@
+/* ________ Header ________ */
+.site_header
+	position relative
+	max-width 960px
+	margin .5rem auto 1rem
+	padding 0
+	border-bottom 1px solid gris_muybajao
+	box-sizing border-box
+	@media (max-width: 960px)
+		margin .5rem 1rem 1rem
+	@media (max-width: 768px)
+		margin 1rem
+		border none
+
+.status_bar
+	font-size .75rem
+	line-height 1em
+	color gris_claro
+	padding 0 0 .25rem
+	border-bottom 1px solid gris_minimo
+	justify-content flex-start
+	align-items center
+	@media (max-width: 768px)
+		justify-content flex-end
+	nav
+		flex-grow 0
+		flex-shrink 0
+		li
+			display inline-block
+			line-height 1em
+			a
+				font-family primary_font
+	.lang_nav
+		margin 0 .75rem 0 0
+		@media (max-width: 768px)
+			display none
+		.lang_menu
+			flex-basis 25%
+			li
+				&:after
+					content '/'
+					color gris_masclaro
+					margin 0 0 0 .25rem
+				&:last-of-type
+					&:after
+						content ''
+				a
+					color gris_claro
+					&.active
+						color gris_masclaro
+	.status_message
+		flex-grow 1
+		flex-shrink 1
+		@media (max-width: 768px)
+			display none
+	.secondary_nav
+		align-self flex-end
+		@media (max-width: 768px)
+			flex-basis 12%
+		@media (max-width: 480px)
+			flex-basis 30%
+		@media (max-width: 320px)
+			flex-basis 35%
+		.secondary_menu
+			li
+				margin 0 0 0 .35rem
+				@media (max-width: 768px)
+					margin 0
+				a
+					color gris_claro
+					@media (max-width: 768px)
+						display block
+				&:after
+					content '|'
+					color gris_bajao
+					margin 0 0 0 .35rem
+					@media (max-width: 768px)
+						content initial
+				&:last-of-type
+					&:after
+						content ''
+						margin 0
+			.phone
+				a
+					@media (max-width: 768px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+						background url(../svg/icon_phone.svg) no-repeat center
+						background-size contain
+			.login
+				a
+					@media (max-width: 768px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+						background url(../svg/icon_user_stroke.svg) no-repeat center
+						background-size contain
+			.cart
+				.cart_button
+					width .875rem
+					height .75rem
+					display inline-block
+					vertical-align bottom
+					line-height 1em
+					text-indent -9999px
+					margin 0 0 0 .15rem
+					background url(../svg/icon_cart.svg) no-repeat center
+					background-size contain
+					@media (max-width: 768px)
+						text-indent -9999px
+						width 1.5rem
+						height 1.5rem
+					&.filled
+						position relative
+						background url(../svg/icon_cart_filled.svg) no-repeat center
+						background-size contain
+						&:after
+							content '4'
+							position absolute
+							top -.35rem
+							right -.5rem
+							width .75rem
+							height .75rem
+							font-weight 400
+							font-size .65rem
+							line-height 110%
+							color #92beae
+							text-align center
+							text-indent 0
+							border 1px solid verde_claro
+							border-radius 100%
+							background-color white
+
+.site_title
+	position relative
+	width 240px
+	height 46px
+	margin 1.5rem auto 2rem
+	text-align center
+	text-indent -9999px
+	background url(../svg/logo_biciclasica.svg) no-repeat center
+	background-size contain
+	@media (max-width: 768px)
+		margin 1.5rem auto 2rem
+	@media (max-width: 320px)
+		width 100%
+	&:before
+		content ''
+		display block
+		width 1.125rem
+		height 1.125rem
+		position absolute
+		top -2.0625rem
+		left 40%
+		right 40%
+		margin 0 auto
+		padding 0 .5rem
+		background url(../svg/icon_star.svg) no-repeat center
+		background-size contain
+	.name
+		font-weight normal
+		font-size 1.85rem
+		line-height 1em
+		margin 0
+		a
+			display block
+	.tagline
+		font-weight normal
+		font-size 1.05rem
+		line-height 1em
+		margin 0
+		a
+			display block

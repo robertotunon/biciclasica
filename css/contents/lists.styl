@@ -1,0 +1,138 @@
+/* ________ Listado categoría ________ */
+.subcat_list
+	.item
+		text-align center
+		flex 0 1 25%
+		margin 0 auto 3rem
+		flex-direction column
+		&:hover
+			.subcat_thumb
+				opacity 1
+				img
+					filter grayscale(0)
+			.subcat_name
+				a
+					color verde
+			.count
+				color gris
+		.subcat_thumb
+			width 8rem
+			height 8rem
+			border 2px solid verde
+			border-radius 50%
+			margin 0 auto 1rem
+			padding .5rem
+			background-color white
+			opacity .7
+			transition all .25s ease-in-out
+			img
+				filter grayscale(1)
+		.subcat_name
+			font-size 1rem
+			line-height 1em
+			text-transform uppercase
+			margin 0 auto .5rem
+			transition all .25s ease-in-out
+			a
+				font-family primary_font
+		.count
+			font-weight 300
+			font-style normal
+			font-size 1rem
+			color gris_masclaro
+			padding 0
+			border none
+			transition all .25s ease-in-out
+
+.info_banner
+	margin-bottom 1rem
+	padding .5rem
+	background-color verde_bajao
+	@media (max-width: 480px)
+		justify-content center
+	.message
+		padding 0
+	p
+		font-weight 400
+		font-size .875rem
+		line-height 1em
+		letter-spacing -.035rem
+		color gris_claro
+		margin 0
+		@media (max-width: 480px)
+			width 100%
+			text-align center
+			margin-bottom .5rem
+			&:last-of-type
+				margin-bottom 0
+		span
+			color verde
+
+/* ________ Listado subcategoría ________ */
+.subcategory
+	.section_header
+		margin-bottom .5rem
+		padding 0
+		background-color gris_minimo
+		.header_content
+			text-align left
+			padding 3rem 0
+			background  url(../img/lovelybikes_clasicas-header.jpg) no-repeat
+			background-position right bottom
+			@media (max-width: 768px)
+				padding 3rem 1rem
+			@media (max-width: 480px)
+				background-position right -9rem bottom
+			@media (max-width: 340px)
+				background-position right -12rem bottom
+		.crumb_link
+			display block
+			font-family primary_font
+			font-size 1.15rem
+			line-height 1em
+			color gris_masclaro
+			text-transform uppercase
+			margin-bottom .25rem
+			@media (max-width: 480px)
+				font-size 1rem
+			span
+				text-decoration underline
+			&:after
+				content '/'
+				margin-left .15rem
+			&:hover
+				color gris_bajao
+				&:after
+					color gris_masclaro
+		.section_title
+			font-size 2.875rem
+			letter-spacing -.125rem
+			line-height 1em
+			margin-bottom 0
+			@media (max-width: 480px)
+				font-size 2.5rem
+				word-wrap break-word
+	.subsub
+		margin -.5rem 0 .5rem
+		padding .5rem
+		background-color gris_superminimo
+	.subcat_list
+		margin-top 1rem
+		justify-content center
+		.item
+			flex 0 1 12%
+			margin 0 1rem
+			@media (max-width: 768px)
+				flex 0 1 16%
+			@media (max-width: 480px)
+				flex 0 1 40%
+			.subcat_thumb
+				width 5rem
+				height 5rem
+				margin-bottom .5rem
+			.subcat_name
+				font-size .875rem
+			.count
+				font-size .875rem
+
+

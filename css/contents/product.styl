@@ -1,0 +1,597 @@
+/* ________ Ficha Producto ________ */
+.added
+	margin 0 auto 1rem
+	padding-top 0
+	padding-bottom 0
+	.message
+		font-weight 400
+		font-size 1rem
+		line-height 1em
+		letter-spacing -.035rem
+		color verde
+		text-align center
+		margin 0
+		padding .5rem 0
+		background-color verde_bajao
+		border-top 1px solid verde
+		border-bottom 1px solid verde
+		@media (max-width: 480px)
+			font-size .875rem
+		&:before
+			content ''
+			display inline-block
+			vertical-align middle
+			width 1.25rem
+			height 1.25rem
+			margin-right .25rem
+			background url(../svg/icon_check.svg) no-repeat center
+			background-size 80%
+			border 2px solid verde
+			border-radius 50%
+			@media (max-width: 768px)
+				width 1rem
+				height 1rem
+
+.product_single
+	.section_header
+		text-align center
+.product
+	align-items stretch
+	margin-bottom 2rem
+	padding-top 0
+	padding-bottom 0
+	.product_viewer
+		flex 0 1 66.668%
+		max-width 66.668%
+		@media (max-width: 768px)
+			flex 0 1 65%
+		@media (max-width: 480px)
+			max-width 100%
+			flex 1 1 100%
+		.flickity-page-dots
+			bottom .25rem
+			line-height .5rem
+			.dot
+				width .5rem
+				height .5rem
+				margin 0 .35rem 0 0
+				background-color white
+				border 1px solid gris
+				&.is-selected
+					background-color gris_claro
+					border-color gris_claro
+		.product_image
+			margin 0 auto 1rem
+		.product_thumbs
+			display block
+			width 100%
+			list-style none
+			overflow hidden
+			margin 0
+			padding 0
+			@media (max-width: 480px)
+				display none
+			li
+				display inline-block
+				vertical-align top
+				width 7.5rem
+				margin-right .25rem
+				border 1px solid gris_muybajao
+				.is-nav-selected
+					border-color primary
+				@media (max-width: 480px)
+					width 19%
+					height auto
+	.product_info
+		max-width 290px
+		flex 0 1 31%
+		flex-flow column wrap
+		justify-content flex-start
+		@media (max-width: 768px)
+			flex 0 1 33%
+		@media (max-width: 480px)
+			max-width initial
+			flex 1 1 100%
+		.product_details
+			width 100%
+			align-self flex-start
+			margin-bottom 1rem
+			.product_name
+				font-family secondary_font
+				font-style italic
+				font-weight normal
+				font-size 1.5rem
+				line-height 1.125em
+				letter-spacing -.025rem
+				flex-basis 100%
+			.reviews
+				font-size .875rem
+				line-height 1em
+				color gris_bajao
+				margin 0 0 .75rem
+				.stars
+					display inline-block
+					vertical-align bottom
+					height 1em
+					margin-right .25rem
+					.star
+						float left
+						width .75rem
+						height .75rem
+						background url(../svg/icon_star-yellow.svg) no-repeat center
+						background-size contain
+			.product_description
+				flex-basis 100%
+				font-size .875rem
+				color gris_masclaro
+				margin-bottom 0
+		.size_selector
+			width 100%
+			margin-bottom 1rem
+			.title
+				font-weight 400
+				font-size 1rem
+				line-height 1em
+			.sizes
+				justify-content center
+				.item
+					position relative
+					text-align center
+					flex 0 1 20%
+					input
+						width 2.5rem
+						height 2.5rem
+						margin 0
+						background-color gris_minimo
+						border none
+						cursor pointer
+						transition all .25s ease-out
+						transform-origin center
+						&:checked
+							border 2px solid verde_masclaro
+							transform scale(1.1, 1.1)
+							&:after
+								background-color verde_masclaro
+							+label
+								font-weight 400
+								font-size 1rem
+								color white
+					label
+						position absolute
+						top 0
+						left 0
+						width 100%
+						height 100%
+						font-size .875rem
+						line-height 2.5rem
+						color gris_masclaro
+						cursor pointer
+						transition all .25s ease-out
+		.product_buy
+			width 100%
+			align-self flex-start
+			@media (max-width: 480px)
+				margin-bottom 2rem
+			.stock
+				font-weight 400
+				font-style italic
+				font-size .8125rem
+				letter-spacing -.025rem
+				line-height 1em
+				color verde
+				align-self flex-end
+				margin 0 0 .675rem
+			.deliver
+				font-weight 400
+				font-size .8125rem
+				letter-spacing -.025rem
+				color gris_bajao
+				text-align center
+				margin-bottom 1.5rem
+				flex-basis 100%
+				.day
+					display block
+					font-style italic
+					font-size .875rem
+					color verde
+		.sale_details
+			width 100%
+			margin auto 0 0
+			align-self flex-end
+			@media (max-width: 480px)
+				margin 0
+			li
+				font-size 1rem
+				line-height 1em
+				margin 0 0 .75rem
+				@media (max-width: 480px)
+					text-align center
+				&:last-of-type
+					margin-bottom 0
+				&:before
+					content ''
+					display inline-block
+					vertical-align top
+					width 1rem
+					height 1rem
+					margin 0 .5rem 0 0
+				&.envio
+					&:before
+						background url(../svg/icon_truck.svg) no-repeat center
+						background-size contain
+				&.entrega
+					&:before
+						background url(../svg/icon_rocket_grey.svg) no-repeat center
+						background-size contain
+				&.devolucion
+					&:before
+						background url(../svg/icon_round-arrow.svg) no-repeat center
+						background-size contain
+
+.actions
+	flex 0 1 66.668%
+	justify-content center
+	margin 2rem 0 0
+	@media (max-width: 480px)
+		flex 1 1 100%
+		margin 2rem 0 0
+	a
+		flex 0 1 auto
+		font-family secondary_font
+		font-style italic
+		font-size .75rem
+		color gris_masclaro
+		padding .25rem
+		@media (max-width: 480px)
+			text-align center
+			margin 0 auto .25rem
+			flex 1 1 100%
+		&:hover
+			text-decoration underline
+			&:before
+				transform scale(1.15, 1.15)
+		&:before
+			content ''
+			display inline-block
+			vertical-align middle
+			width 1rem
+			height 1rem
+			margin 0 .25rem 0 0
+			transition all .15s ease-out
+		&.fav
+			margin-right .5rem
+			@media (max-width: 480px)
+				margin-right 0
+			&:before
+				background url(../svg/icon_heart-stroke.svg) no-repeat center
+				background-size contain
+		&.comp
+			margin-left .5rem
+			@media (max-width: 480px)
+				margin-left 0
+			&:before
+				background url(../svg/icon_stack.svg) no-repeat center
+				background-size contain
+.features_list
+	align-items stretch
+	justify-content space-between
+	.item
+		margin 0 auto 4rem
+		flex 0 1 46%
+		align-items center
+		&:nth-of-type(3)
+		&:nth-of-type(4)
+			margin-bottom 0
+		@media (max-width: 480px)
+			align-items flex-start
+			flex 0 1 80%
+			margin 0 auto 3rem
+	.feature_thumb
+		max-width 11rem
+		max-height 11rem
+		border 1px solid gris_muybajao
+		border-radius 50%
+		overflow hidden
+		@media (max-width: 768px)
+			margin 0 auto .5rem
+		@media (max-width: 480px)
+			max-width 8rem
+			max-height 8rem
+	.feature_info
+		flex 0 1 57%
+		@media (max-width: 768px)
+			text-align center
+			margin 0 auto
+			flex 0 1 80%
+		.feature_title
+			font-weight 300
+			font-size 1.5rem
+			line-height 1em
+			margin 0 0 .5rem
+
+.also_interesting
+	.product_list
+		.item
+			width 25%
+			margin 0 1rem 0 0
+			justify-content space-between
+			@media (max-width: 480px)
+				width 46%
+			.buyit
+				@media (max-width: 480px)
+					opacity 1
+					order 2
+					flex 0 1 75%
+					margin 0 auto
+			.price
+				@media (max-width: 480px)
+					order 1
+					flex 1 1 100%
+					margin-bottom .5rem
+
+.montaje
+	.info
+		flex 0 1 28%
+		@media (max-width: 480px)
+			text-align center
+			margin 0 0 2rem
+			flex 1 1 100%
+	.video_container
+		flex 0 1 70%
+		margin 0
+		padding-bottom 39.45%
+		@media (max-width: 480px)
+			flex 1 1 100%
+			padding-bottom 56.25%
+.galeria
+	.info
+		max-width 60%
+		text-align center
+		margin 0 auto 1rem
+		@media (max-width: 480px)
+			max-width 100%
+	.gallery
+		justify-content space-around
+		.item
+			flex 0 1 24%
+			@media (max-width: 480px)
+				flex 0 1 48%
+
+
+
+.fichatecnica
+	.ficha
+		max-width 65%
+		margin 0 auto
+		@media (max-width: 480px)
+			max-width 100%
+		.term
+		.value
+			font-size .875rem
+			line-height 1em
+			flex 1 1 50%
+			margin 0
+			padding .25rem .25rem 1rem
+			border-top 1px solid gris_muybajao
+			&:first-of-type
+				border none
+		.term
+			font-weight 400
+			text-align right
+			color gris
+			@media (max-width: 480px)
+				flex 1 1 40%
+		.value
+			color gris_claro
+			@media (max-width: 480px)
+				flex 1 1 60%
+
+.product_thumbs
+	li
+		.is-nav-selected
+			border-color gris_masclaro
+
+
+.flickity-prev-next-button
+	width 2rem !important
+	height 2rem !important
+	background transparent !important
+	padding 0 !important
+	&:hover
+		background transparent
+	&.previous
+		svg
+			left 0
+	&.next
+		svg
+			right 0
+			left auto
+
+.product_thumbs
+	width 100%
+	.flickity-viewport
+		max-width 96%
+		margin 0 auto
+	.flickity-prev-next-button
+		&.previous
+			left -.15rem
+		&.next
+			right -.15rem
+
+.product_list
+	width 96%
+	margin 0 auto
+	.flickity-prev-next-button
+		&.previous
+			left -1.25rem
+		&.next
+			right -1.25rem
+
+// .slick-slide
+// 	margin-right .5rem
+// 	box-sizing border-box
+// 	&:last-of-type
+// 		margin-right 0
+
+
+/* _____________ Shoping cart ______________ */
+.toggle_cart
+	display none
+	&:checked ~ .minicesta
+		top 2rem
+		opacity 1
+		height auto
+	@media (max-width: 768px)
+		&:checked ~ .minicesta
+			top 0
+			right 0
+			opacity 1
+	&:checked ~ .minicesta .close_cart
+		display block
+
+.minicesta
+	position absolute
+	top -2rem
+	right 2rem
+	width 300px
+	height 0
+	max-height 400px
+	padding 1rem
+	background-color gris_minimo
+	transition all .25s ease-out
+	opacity 0
+	overflow hidden
+	@media (max-width: 768px)
+		position fixed
+		top 0
+		bottom 0
+		height 100%
+		max-height 100%
+		right -100vw
+		width 80vw
+		height 100vh
+	.close_cart
+		display none
+		position absolute
+		top 1rem
+		right 1rem
+		width 1rem
+		height 1rem
+		text-indent -9999px
+		background url(../svg/icon_close.svg) no-repeat center
+		background-size contain
+	.section_header
+		margin-bottom .5rem
+		@media (max-width: 768px)
+			margin-bottom 1rem
+		.section_title
+			font-size 1.25rem
+	.shoplist
+		max-height 240px
+		overflow-y scroll
+		@media (max-width: 768px)
+			max-height 70vh
+		.item
+			&:last-of-type
+				margin-bottom 0
+				border none
+			.product_thumb
+				margin 0 .5rem .5rem 0
+				flex 0 1 25%
+				@media (max-width: 768px)
+					flex 0 1 30%
+			.product_name
+				font-family primary_font
+				font-style normal
+				font-size .875rem
+				margin 0 auto .5rem 0
+				flex 0 1 70%
+				@media (max-width: 768px)
+					font-family secondary_font
+					font-size 1rem
+					margin-bottom 1rem
+					flex 0 1 65%
+			.quantity
+				margin 0 .5rem 0 0
+				flex 0 1 25%
+				text-align right
+				&:before
+					content 'x'
+					display inline-block
+					vertical-align middle
+					width .5rem
+					height .5rem
+					font-size .75rem
+				.current_quantity
+					width .75rem
+					height .75rem
+					background transparent
+					border none
+					@media (max-width: 768px)
+						width 1.25rem
+						height 1.25rem
+						background white
+						border 1px solid gris_bajao
+				.btn
+					display none
+				@media (max-width: 768px)
+					text-align center
+					flex 0 1 30%
+					&:before
+						display none
+					.btn
+						display inline-block
+			.price
+				font-family primary_font
+				font-size 1.15rem
+				margin 0 auto 0 0
+				flex 0 1 65%
+				@media (max-width: 768px)
+					text-align right
+					margin 0 0 0 auto
+					flex 0 1 60%
+			.delete
+				order 3
+				margin 0 0 0 auto
+				flex 0 1 4%
+				@media (max-width: 768px)
+					order initial
+	.totalcart
+		margin .5rem 0 0
+		padding .5rem 0 0
+		background-color gris_minimo
+		border-top 1px solid gris_masclaro
+		justify-content flex-end
+		align-items baseline
+		@media (max-width: 768px)
+			position fixed
+			bottom 0
+			width 72vw
+			margin-bottom 1rem
+		.total
+			font-weight 400
+			font-size 1.25rem
+			line-height 1em
+			margin 0
+			flex 0 1 20%
+		.price
+			font-family secondary_font
+			font-size 1.5rem
+			line-height 1em
+			text-align right
+			margin 0 0 .5rem auto
+			.decimals
+				font-size 80%
+			.currency
+				font-size 90%
+				margin 0 0 0 -.15rem
+	.tocheckout
+		flex 1 1 100%
+		margin 0 auto
+		&:not(.mobile)
+			@media (max-width: 768px)
+				display none
+		&.mobile
+			display none
+			@media (max-width: 768px)
+				display initial

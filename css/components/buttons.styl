@@ -1,0 +1,117 @@
+/* ________ Buttons ________ */
+.btn
+	position relative
+	display block
+	width 100%
+	font-family primary_font
+	font-weight 400
+	font-size 1.25rem
+	text-transform uppercase
+	text-align center
+	color white
+	padding .5rem
+	background-color verde
+	border none
+	border-radius 0
+	outline none
+	overflow hidden
+	cursor pointer
+	transition all .2s ease-out
+	&:hover
+		color white
+		background-color verde_masclaro
+	&.buy
+		margin 0 auto 1rem
+		&:before
+			content ''
+			position absolute
+			top 0
+			left -3rem
+			width 2.5rem
+			height 100%
+			background url(../svg/icon_cart-white.svg) no-repeat center verde_masclaro
+			background-size 46%
+			transition all .25s ease-in-out
+		&:hover
+			color white
+			padding .5rem 0 .5rem 2.5rem
+			background-color verde_claro
+			&:before
+				left 0
+		&:focus
+			background-color verde
+			padding .5rem 0 .5rem 2.5rem
+			&:before
+				left 0
+	&.delete
+		height 1rem
+		text-indent -9999px
+		padding 0
+		background-color transparent
+		background url(../svg/icon_delete.svg) no-repeat center
+		background-size contain
+	&.apply
+		font-size .875rem
+		padding .25rem
+		background-color gris_bajao
+		&:hover
+			background-color verde_claro
+	&.back
+		color gris_masclaro
+		background-color transparent
+		border 2px solid gris_masclaro
+		&:before
+			content ''
+			display inline-block
+			vertical-align middle
+			width .75rem
+			height .875rem
+			margin 0 .5rem 0 0
+			background url(../svg/arrow_left.svg) no-repeat center
+			background-size contain
+		&:hover
+			color white
+			background gris_masclaro
+			&:before
+				background-image url(../svg/arrow_left_white.svg)
+.link
+	font-style italic
+	text-decoration underline
+	color verde
+	&.viewmore
+		font-size 1rem
+		line-height 1em
+		letter-spacing -.025rem
+		color gris
+		text-decoration underline
+		margin 0 auto
+		box-sizing border-box
+		display block
+		text-align center
+		&:after
+			content '+'
+			display inline-block
+			vertical-align middle
+			width 1rem
+			height 1rem
+			font-weight bold
+			font-size 1rem
+			line-height .75em
+			text-decoration none
+			margin-left .25rem
+			border 2px solid
+			border-radius 100%
+	&.doc
+		color gris
+		&:before
+			content ''
+			display inline-block
+			vertical-align middle
+			width 1rem
+			height 1rem
+			margin-right .25rem
+			background url(../svg/icon_document-pdf.svg) no-repeat center
+			background-size contain
+		&:hover
+			&:before
+				opacity .7

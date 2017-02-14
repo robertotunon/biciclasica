@@ -1,0 +1,228 @@
+/* ________ Checkout ________ */
+.checkout
+	.section_title
+		margin 0
+	.col
+		padding-right 1rem
+		border-right 1px solid gris_muybajao
+		&:last-of-type
+			border none
+			padding 0
+		@media (max-width: 768px)
+			flex 0 1 36%
+			padding-right .5rem
+			&:nth-of-type(2)
+				flex 0 1 28%
+				padding 0 .5rem
+			&:last-of-type
+				padding-left .5rem
+		@media (max-width: 480px)
+			flex 1 1 100%
+			border none
+			padding 0
+			&:nth-of-type(2)
+				flex 1 1 100%
+				padding 0
+			&:last-of-type
+				padding 0
+				
+	.module
+		margin-bottom 2rem
+		@media (max-width: 480px)
+			margin-bottom 2rem
+			padding-bottom 2rem
+			border-bottom 1px solid gris_muybajao
+			&.resume
+			&.discount
+			&.comments
+				@media (max-width: 480px)
+					border-bottom none
+					padding-bottom 0
+		.module_header
+			margin 0 auto 1rem
+			@media (max-width: 480px)
+				text-align center
+			.module_title
+				font-family secondary_font
+				font-style italic
+				font-size 1.25rem
+				line-height 1em
+				letter-spacing -.025rem
+				color gris_claro
+				&:before
+					display inline-block
+					vertical-align text-bottom
+					width 1.5rem
+					height 1.5rem
+					font-family secondary_font
+					font-style normal
+					font-weight bold
+					font-size 1rem
+					line-height 1.45em
+					color white
+					text-align center
+					margin-right .25rem
+					background-color verde
+					border-radius 1rem
+					@media (max-width: 480px)
+						display block
+						margin 0 auto .25rem
+		.title
+			font-size 1rem
+			line-height 1em
+			margin-bottom .25rem
+		&.billing
+			.module_title
+				&:before
+					content '1'
+		&.sending
+			@media (max-width: 480px)
+				text-align center
+			.module_title
+				&:before
+					content '2'
+		&.paying
+			.module_title
+				&:before
+					content '3'
+		&.resume
+			.module_title
+				&:before
+					content '4'
+	form
+		.item
+			margin-bottom 1rem
+		&.paymethod
+			.item
+				margin-bottom .5rem
+	input
+		&[type="checkbox"]
+		&[type="radio"]
+			display inline-block
+			vertical-align middle
+			width 1.25rem
+			height 1.25rem
+			margin 0 .25rem 0
+	label
+		font-size .875rem
+	.link
+		&.login
+			display block
+			font-size .875rem
+			text-align right
+	.sendmethod
+		.sendprice
+			font-size .875rem
+			line-height 1em
+			text-align center
+			margin-bottom .25rem
+			padding .5rem
+			background-color verde_muybajao
+			border-top 1px solid verde_claro
+			border-bottom 1px solid verde_claro
+		.explain
+			font-style italic
+			font-size .875rem
+			line-height 1em
+			text-align center
+			color verde
+	.paymethod
+		@media (max-width: 480px)
+			max-width 60%
+			margin 0 auto
+		label[for="paypal"]
+			display inline-block
+			width 5rem
+			height 1.1875rem
+			text-indent -9999px
+			background url(../svg/logo_paypal_simple.svg) no-repeat left center
+			background-size contain
+	.securepay
+		height auto
+		margin 3rem auto
+		justify-content space-around
+		@media (max-width: 480px)
+			display none
+		.item
+			max-width initial
+			height 2.5rem
+			text-indent -9999px
+			margin 0
+			flex 0 1 28%
+			&.verifiedvisa
+				background url(../svg/logo_verifiedvisa.svg) no-repeat center
+				background-size contain
+			&.securecode
+				background url(../svg/logo_securecode.svg) no-repeat center
+				background-size contain
+		&.mobile
+			display none
+			@media (max-width: 480px)
+				display flex
+	.shoplist
+		margin-bottom .5rem
+		.item
+			margin-bottom .5rem
+			&:last-of-type
+				border-color gris_claro
+				margin-bottom 0
+		.labels
+			font-style italic
+			font-size .75rem
+			letter-spacing -.015rem
+			.label
+				text-align center
+				&:first-of-type
+					text-align left
+					flex 0 1 60%
+				&:nth-of-type(2)
+					min-width 0
+					flex 0 1 10%
+				&:last-of-type
+					text-align right
+					flex 0 1 30%
+		.product_name
+			font-style normal
+			font-family primary_font
+			font-weight 300
+			font-size .875rem
+			flex 0 1 60%
+		.quantity
+			min-width 0
+			flex 0 1 10%
+		.subtotal
+			text-align right
+			flex 0 1 30%
+	.totalcart
+		background-color white
+		padding 0
+		.price
+			font-family primary_font
+		.grandtotal
+			font-weight 400
+			.price
+				font-family secondary_font
+				font-weight 400
+
+.user_data
+	.item
+		flex 0 1 48%
+		&.full
+			flex 1 1 100%
+
+.discount
+	input
+		max-width 68%
+		display inline-block
+		margin 0
+	.apply
+		max-width 30%
+		display inline-block
+.comments
+	textarea
+		display block
+		margin 0
+.confirm
+	margin 2rem auto 0
+	@media (max-width: 480px)
+		margin 2rem auto

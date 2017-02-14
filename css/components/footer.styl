@@ -1,0 +1,251 @@
+/* ________ Footer ________ */
+.site_footer
+	width 100%
+	padding 0
+	margin 0 0 2rem
+	.footer_links
+		padding 2rem 0
+		background-color gris_claro
+		margin 0 0 1rem
+		h4
+			font-size 1.375rem
+			letter-spacing -.025rem
+			line-height 1em
+			margin 0 0 .5rem
+			color gris_bajao
+		nav
+			flex-basis 23%
+			flex-grow 1
+			flex-shrink 1
+			@media (max-width: 480px)
+				flex-basis 100%
+				margin 0 0 2rem
+			ul
+				padding 0 0 0 .5rem
+				li
+					margin 0 0 .5rem
+					a
+						font-family primary_font
+						font-size 1rem
+						color white
+						&:hover
+							color gris_muybajao
+							text-decoration underline
+		p
+			font-weight 400
+			font-size 0.875rem
+			line-height 1em
+			color white
+			margin 0
+		.fourth_col
+			flex-basis 30%
+			@media (max-width: 768px)
+				margin 2rem 0
+				flex-basis 100%
+				justify-content space-around
+			@media (max-width: 600px)
+				margin 0 auto
+			.newsletter
+				margin 0 0 1rem 0
+				@media (max-width: 768px)
+					margin 0
+					flex 0 1 40%
+				@media (max-width: 480px)
+					margin 0 0 2rem
+					flex-basis 100%
+				p
+					margin 0 0 .5rem
+				.newsletter_form
+					position relative
+					.input_newsletter
+						font-weight 400
+						font-size 1rem
+						line-height 1em
+						color gris
+						margin 0
+						padding .5rem
+						border-color gris
+						&::-webkit-input-placeholder
+							font-weight 400
+							font-size .875rem
+							color gris
+						&:-moz-placeholder /* Firefox 18- */
+							font-weight 400
+							font-size .875rem
+							color gris
+						&::-moz-placeholder  /* Firefox 19+ */
+							font-weight 400
+							font-size .875rem
+							color gris
+						&:-ms-input-placeholder 
+							font-weight 400
+							font-size .875rem		
+							color gris
+					.btn_newsletter
+						position absolute
+						display block
+						text-indent -9999px
+						top .25rem
+						right .25rem
+						width 1.625rem
+						height 1.625rem
+						margin 0
+						padding 0
+						background url(../svg/icon_check_grey.svg) no-repeat center
+						background-size 80%
+						border 2px solid gris_claro
+						cursor pointer
+						transition all .25s ease-out
+						&:hover
+							opacity .7
+			.social_nav
+				@media (max-width: 768px)
+					flex 0 1 40%
+				@media (max-width: 480px)
+					flex-basis 100%
+					margin 0
+				ul
+					padding 0
+					margin 1rem 0 0
+					justify-content space-around
+					li
+						width 1.5rem
+						height 1.5rem
+						text-indent -9999px
+						overflow hidden
+						border-radius 50%
+						background-color gris
+						&.facebook
+							background url(../svg/icon_facebook.svg) no-repeat center gris
+							background-size 30%
+						&.twitter
+							background url(../svg/icon_twitter.svg) no-repeat center gris
+							background-size 60%
+						&.googleplus
+							background url(../svg/icon_googleplus.svg) no-repeat center gris
+							background-size 60%
+						&.instagram
+							background url(../svg/icon_instagram.svg) no-repeat center gris
+							background-size 60%
+						&.pinterest
+							background url(../svg/icon_pinterest.svg) no-repeat center gris
+							background-size 60%
+						&.flickr
+							background url(../svg/icon_flickr.svg) no-repeat center gris
+							background-size 60%
+						&.youtube
+							background url(../svg/icon_youtube.svg) no-repeat center gris
+							background-size 60%
+
+	.credit_logos
+		margin 0 auto 1rem
+		justify-content flex-start
+		@media (max-width: 768px)
+			justify-content space-between
+		.title
+			font-size .75rem
+			color gris_claro
+			margin 0 0 .25rem
+			padding 0 0 .25rem 0
+			box-sizing border-box
+			border-bottom 1px solid gris_muybajao
+		.payments
+		.shipments
+			flex-basis 33%
+			@media (max-width: 768px)
+				flex-basis 45%
+			@media (max-width: 600px)
+				flex-basis 100%
+		.payments
+			margin 0 3rem 0 0
+			@media (max-width: 768px)
+				margin 0
+			@media (max-width: 600px)
+				margin 0 0 1rem
+		.list
+			justify-content space-between
+			@media (max-width: 768px)
+				justify-content space-around
+			li
+				flex-basis 33%
+				max-width 4rem
+				height 3rem
+				overflow hidden
+				text-indent -9999px
+				display inline-block
+				vertical-align middle
+				&.visa
+					background url(../svg/logo_visa.svg) no-repeat center
+					background-size contain
+				&.mastercard
+					background url(../svg/logo_mastercard.svg) no-repeat center
+					background-size contain
+					max-width 4rem
+					@media (max-width: 480px)
+						max-width 3rem
+				&.paypal
+					background url(../svg/logo_paypal.svg) no-repeat center
+					background-size contain
+					max-width 5rem
+				&.seur
+					background url(../svg/logo_seur.svg) no-repeat center
+					background-size contain
+					max-width 5rem
+					@media (max-width: 480px)
+						max-width 4rem
+				&.ups
+					background url(../svg/logo_ups.svg) no-repeat center
+					background-size contain
+					max-width 2rem
+					@media (max-width: 480px)
+						max-width 1.5rem
+				&.fedex
+					background url(../svg/logo_fedex.svg) no-repeat center
+					background-size contain
+					max-width 4rem
+	.credits
+		margin 0 auto
+		padding 0 1rem
+		@media (max-width: 768px)
+			margin 0 2rem
+			padding .5rem 0 0
+		@media (max-width: 480px)
+			margin 0 1rem
+		.credits_data
+			flex 0 1 65%
+			@media (max-width: 768px)
+				flex 0 1 62%
+			@media (max-width: 480px)
+				order 2
+				flex 1 1 100%
+				margin 0 0 1rem
+				text-align center
+			.copyright
+				font-weight 400
+				font-size .8125rem
+				line-height 1em
+				color gris_claro
+				margin-bottom .25rem
+				@media (max-width: 480px)
+					margin-bottom .5rem
+			.address
+				display block
+				font-weight 400
+				font-style normal
+				font-size .75rem
+				color gris_masclaro
+				a
+					color gris_masclaro
+					@media (max-width: 480px)
+						display block
+		.credits_logo
+			flex 0 1 30%
+			min-height 2rem
+			text-indent -9999px
+			background url(../svg/biciclasica-com.svg) no-repeat top right
+			background-size contain
+			@media (max-width: 480px)
+				order 1
+				flex 1 1 100%
+				margin 1rem auto
+				background-position center

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Cesta de la compra · Biciclasica Online Store</title>
+
+	<meta name="theme-color" content="#92beae">
+	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i|Roboto:300,400,400i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/biciclasica_min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+	<header class="site_header inner">
+		<aside class="status_bar flex">
+			<nav class="lang_nav">
+				<ul class="lang_menu">
+					<li><a href="#" class="active">ESP</a></li>
+					<li><a href="#">ENG</a></li>
+					<li><a href="#">B2B</a></li>
+				</ul>
+			</nav>
+			<span class="status_message">Precio Mínimo Garantizado</span>
+			<nav class="secondary_nav">
+				<ul class="secondary_menu flex">
+					<li class="phone"><a href="tel:+34985331777">985 331 777</a></li>
+					<li class="login"><a href="#">Mi cuenta</a></li>
+					<li class="cart"><label class="cart_button" for="shopping_cart">Cesta</label></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<section class="site_title">
+			<h1 class="name"><a href="index.html">BICICLASICA</a></h1>
+			<h2 class="tagline"><a href="index.html">ONLINE STORE</a></h2>
+		</section>
+		
+		<label class="open_menu" for="menutoggle">Menu</label>
+		<input id="menutoggle" type="checkbox">
+		<nav class="main_nav">
+			<ul class="main_menu">
+				<li><a href="#">Bicicletas</a></li>
+				<li><a href="#">Accesorios</a></li>
+				<li><a href="#">Componentes</a></li>
+				<li><a href="#">Marcas</a></li>
+				<li><a href="#">Novedades</a></li>
+				<li><a href="#">Ofertas</a></li>
+				<li class="search">
+					<form action="" class="search_form">
+						<input type="search" class="input_search">
+						<input type="submit" class="btn_search">
+					</form>
+				</li>
+			</ul>
+		</nav>
+		
+		<form action="" class="search_form hide">
+			<input type="search" class="input_search" placeholder="¿Qué estás buscando?">
+			<input type="submit" class="btn_search">
+		</form>
+	</header>
+	
+	<main class="main_content cart" role="main">
+		<section class="cart_resume inner flex">
+		<header class="section_header">
+			<h1 class="section_title">Cesta de la compra</h1>
+		</header>
+			<article class="cesta_resume">
+				<ul class="shoplist flex">
+					<li class="labels item flex">
+						<span class="label">Producto</span> <span class="label">Precio</span> <span class="label">Cantidad</span> <span class="label">Subtotal</span> <span class="label"></span>
+					</li>
+					<li class="item flex">
+						<figure class="product_thumb"><img src="img/capri_gracia_verde_01_thumb.jpg" alt=""></figure>
+						<h4 class="product_name">Bicicleta de Paseo Capri Gracia verde</h4>
+						<p class="precio">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<div class="quantity flex">
+							<button class="btn quantity_control minus">-</button>
+							<input type="text" class="current_quantity" value="1">
+							<button class="btn quantity_control plus">+</button>
+						</div>
+						<p class="subtotal">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<button class="btn delete">Eliminar</button>
+					</li>
+					<li class="item flex">
+						<figure class="product_thumb"><img src="img/capri_gracia_verde_01_thumb.jpg" alt=""></figure>
+						<h4 class="product_name">Bicicleta de Paseo Capri Gracia verde</h4>
+						<p class="precio">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<div class="quantity flex">
+							<button class="btn quantity_control minus">-</button>
+							<input type="text" class="current_quantity" value="1">
+							<button class="btn quantity_control plus">+</button>
+						</div>
+						<p class="subtotal">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<button class="btn delete">Eliminar</button>
+					</li>
+					<li class="item flex">
+						<figure class="product_thumb"><img src="img/capri_gracia_verde_01_thumb.jpg" alt=""></figure>
+						<h4 class="product_name">Bicicleta de Paseo Capri Gracia verde</h4>
+						<p class="precio">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<div class="quantity flex">
+							<button class="btn quantity_control minus">-</button>
+							<input type="text" class="current_quantity" value="1">
+							<button class="btn quantity_control plus">+</button>
+						</div>
+						<p class="subtotal">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<button class="btn delete">Eliminar</button>
+					</li>
+					<li class="item flex">
+						<figure class="product_thumb"><img src="img/capri_gracia_verde_01_thumb.jpg" alt=""></figure>
+						<h4 class="product_name">Bicicleta de Paseo Capri Gracia verde</h4>
+						<p class="precio">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<div class="quantity flex">
+							<button class="btn quantity_control minus">-</button>
+							<input type="text" class="current_quantity" value="1">
+							<button class="btn quantity_control plus">+</button>
+						</div>
+						<p class="subtotal">2229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						<button class="btn delete">Eliminar</button>
+					</li>
+				</ul>
+				<section class="totalcart flex">
+					<ul class="totals">
+						<li class="subtotal item flex">
+							<span class="label">Subtotal</span>
+							<p class="amount price">8639<span class="decimals">,88</span> <span class="currency">€</span></p>
+						</li>
+						<li class="deliver item flex">
+							<span class="label">Gastos de envío</span>
+							<p class="amount price">0<span class="decimals">,00</span> <span class="currency">€</span></p>
+						<li class="taxes item flex">
+							<span class="label">IVA (21%)</span>
+							<p class="amount price">123<span class="decimals">,58</span> <span class="currency">€</span></p>
+						</li>
+						<li class="grandtotal item flex">
+							<span class="label">Total</span>
+							<p class="amount price">8639<span class="decimals">,88</span> <span class="currency">€</span></p>
+						</li>
+					</ul>
+					<ul class="securepay flex">
+						<li class="item secure flex"><span class="text">Pago 100% seguro</span></li>
+						<li class="item verifiedvisa">Verified by VISA</li>
+						<li class="item securecode">MasterCard Securecode</li>
+						<li class="item paypal">Paypal</li>
+					</ul>
+				</section>
+			</article>
+
+			<aside class="sidebar">
+				<section class="delivery_data module">
+					<article class="delivery flex">
+						<p class="estimated_date flex">Fecha estimada de entrega:
+						<span class="delivery_date">Miércoles 28 de septiembre</span>
+						</p>
+					</article>
+					<article class="costs">
+						<h6 class="title">Costes del envío</h5>
+						<dl class="delivery_prices flex">
+							<dt class="label">Pensínsula<span class="aclaration">*</span></dt>
+							<dd class="value">5 € <span class="timelapse">(1/2 días)</span></dd>
+							<dt class="label">Baleares</dt>
+							<dd class="value">7 € <span class="timelapse">(2/3 días)</span></dd>
+						</dl>
+						<p class="aclaration">* Envío gratuito en pedidos de más de 50 €</p>
+					</article>
+					<a href="checkout.html" class="btn tocheckout">Realizar pedido</a>
+				</section>
+				<a href="/" class="btn back">Continuar comprando</a>
+			</aside>
+		</section>
+
+		<section class="also_interesting module inner">
+			<header class="section_header">
+				<h1 class="section_title">También te puede interesar</h1>
+			</header>
+			<ul class="product_list">
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+				<li class="item flex">
+					<figure class="product_thumb">
+						<a href="#">
+							<img src="img/product_thumb_02.jpg" alt="">
+						</a>
+					</figure>
+					<h3 class="product_name"><a href="ficha_producto.html">Bicicleta de Paseo Capri Gracia Verde</a></h3>
+					<article class="buy flex">
+						<a href="#" class="btn buyit">Comprar</a>
+						<section class="price">
+							<p class="oldprice">325,00€</p>
+							<p class="amount">229<span class="decimals">,90</span> <span class="currency">€</span></p>
+						</section>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+		
+	<footer class="site_footer">
+		<aside class="inner motivationals">
+			<ul class="flex">
+				<li class="motivational bestprice flex">
+					<section class="info">
+						<h4 class="title">Mejor Precio</h4>
+						<p class="text">Siempre intentamos ofrecerte el mejor precio</p>
+					</section>
+				</li>
+				<li class="motivational sending flex">
+					<section class="info">
+						<h4 class="title">Envío Gratis</h4>
+						<p class="text">En toda la península para pedidos superiores a 50€</p>
+					</section>
+				</li>
+				<li class="motivational delivery flex">
+					<section class="info">
+						<h4 class="title">Entrega en 24 h</h4>
+						<p class="text">Pedidos realizados antes de las 12 pm día laboral</p>
+					</section>
+				</li>
+				<li class="motivational stock flex">
+					<section class="info">
+						<h4 class="title">Stock</h4>
+						<p class="text">Solo te mostramos lo que tenemos en Stock</p>
+					</section>
+				</li>
+			</ul>
+		</aside>
+		
+		<section class="footer_links">
+			<div class="inner flex">
+				<nav class="products_nav">
+					<h4>Productos</h4>
+					<ul>
+						<li><a href="#">Bicicletas</a></li>
+						<li><a href="#">Componentes</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li><a href="#">Marcas</a></li>
+						<li><a href="#">Novedades</a></li>
+						<li><a href="#">Ofertas</a></li>
+					</ul>
+				</nav>
+				<nav class="aboutus_nav">
+					<h4>Sobre nosotros</h4>
+					<ul>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">El proyecto</a></li>
+						<li><a href="#">Tiendas asociadas</a></li>
+						<li><a href="#">Prensa</a></li>
+						<li><a href="#">Galería</a></li>
+					</ul>
+				</nav>
+				<nav class="help_nav">
+					<h4>Te podemos ayudar</h4>
+					<ul>
+						<li><a href="#">Guía de tallas</a></li>
+						<li><a href="#">El taller</a></li>
+						<li><a href="#">Preguntas frecuentes</a></li>
+						<li><a href="#">Bicicletas a medida</a></li>
+						<li><a href="#">Condiciones generales</a></li>
+						<li><a href="#">Devoluciones</a></li>
+					</ul>
+				</nav>
+				<article class="fourth_col flex">
+					<aside class="newsletter">
+						<h4>Newsletter</h4>
+						<p>Para estar siempre al día de todas nuestras novedades y ofertas</p>
+						<form action="" class="newsletter_form">
+							<input type="text" class="input_newsletter" placeholder="Escribe aquí tu email">
+							<input type="submit" class="btn_newsletter" title="Suscribirse">
+						</form>
+					</aside>
+					<nav class="social_nav">
+						<h4>Síguenos</h4>
+						<ul class="flex">
+							<li class="facebook"><a href="#">Biciclásica en Facebook</a></li>
+							<li class="twitter"><a href="#">Biciclásica en Twitter</a></li>
+							<li class="googleplus"><a href="#">Biciclásica en Google plus</a></li>
+							<li class="instagram"><a href="#">Biciclásica en Instagram</a></li>
+							<li class="pinterest"><a href="#">Biciclásica en Pinterest</a></li>
+							<li class="flickr"><a href="#">Biciclásica en Flickr</a></li>
+							<li class="youtube"><a href="#">Biciclásica en Youtube</a></li>
+						</ul>
+					</nav>
+				</article>
+			</div>
+		</section>
+
+		<aside class="credit_logos inner flex">
+			<article class="payments">
+				<!-- <h4 class="title">Puedes pagar con:</h4> -->
+				<ul class="list flex">
+					<li class="visa">Visa</li>
+					<li class="mastercard">Mastercard</li>
+					<li class="paypal">Paypal</li>
+				</ul>
+			</article>
+			<article class="shipments">
+				<!-- <h4 class="title">Te lo enviamos con:</h4> -->
+				<ul class="list flex">
+					<li class="seur">SEUR</li>
+					<li class="ups">UPS</li>
+					<li class="fedex">FedEx</li>
+				</ul>
+			</article>
+		</aside>
+
+		<section class="credits inner flex">
+			<article class="credits_data">
+				<p class="copyright">© 2017 Biciclasica.com · Tienda online de bicicletas clásicas y accesorios para el ciclista urbano.
+				</p>
+				<address class="address">Lovelybikes S.L. · Michel Faraday 75, nave 13 · 33211 Gijón, España · <a href="tel:+34 985331777">+34 985331777</a></address>
+			</article>
+			<a class="credits_logo" href="#">biciclasica.com</a>
+		</section>
+
+	</footer>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script type="text/javascript" src="js/slick/slick.min.js"></script> -->
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	
+	<script type="text/javascript" src="js/biciclasica_scripts.js"></script>
+</body>
+</html>
